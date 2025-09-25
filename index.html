@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Selector de Colores</title>
+</head>
+<body>
+    <header class="header">
+        <img src="./img/logoDark.png" alt="logo" class="logo">
+    </header>
+
+    <div class="container">
+
+        <div class="colorPicker">
+
+            <div class="colorDisplay " id="colorDisplay"></div>
+
+            <div class="sliders">
+                <label>R:
+                    <input type="range" min="0" max="255" value="0" id="redRange" class="redRange">
+                </label>
+                <label>G:
+                    <input type="range" min="0" max="255" value="0" id="greenRange" class="">
+                </label>
+                <label>B:
+                    <input type="range" min="0" max="255" value="0" id="blueRange" class="">
+                </label>            
+            </div>
+            <p id="rgbValue">RGB(0,0,0)</p>
+
+            <button id="copyButton" class="button" onchange="showCopiedText(this)">Copiar Color</button>
+            <p id="copiedText"></p>
+        </div>
+
+    </div>
+    
+
+<script src="script.js"></script>
+</body>
+</html>
